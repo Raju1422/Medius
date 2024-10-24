@@ -1,0 +1,25 @@
+<!-- templates/summary_email_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h4>Summary Report</h4>
+    <p><strong>Total Records:</strong> {{ total_records }}</p>
+    <p><strong>Unique States:</strong> {{ unique_states }}</p>
+    <p><strong>Unique Pins:</strong> {{ unique_pins }}</p>
+    <p><strong>Max DPD:</strong> {{ max_dpd }}</p>
+    <p><strong>Min DPD:</strong> {{ min_dpd }}</p>
+    <p><strong>Avg DPD:</strong> {{ avg_dpd }}</p>
+
+    <h4>State-wise Summary</h4>
+    {{ state_summary_html|safe }}
+</body>
+
+</html>
