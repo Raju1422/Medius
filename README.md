@@ -28,8 +28,8 @@ source env/bin/activate
 3. **Install Dependencies**:
     ```
     pip install -r requirements.txt
-```
-4. **Run the Server**:
+    ```
+4.  **Run the Server**:
 ```
 python manage.py runserver
 ```
